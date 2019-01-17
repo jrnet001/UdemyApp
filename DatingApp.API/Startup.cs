@@ -78,6 +78,7 @@ namespace DatingApp.API
                 // app.UseHsts();
             }
             // app.UseHttpsRedirection();
+            //app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().WithExposedHeaders("Application-Error"));
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseAuthentication();
             app.UseMvc();
